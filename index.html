@@ -5,9 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>animalclicker</title>
+    <link href="/src/style.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="flex flex-col h-screen">
+    <header class="bg-green-500  text-white italic text-5xl text-center ">
+      <h1>Animal Clicker</h1>
+    </header>
+
+   <main class="flex flex-1 ">
+    <dive class=" flex-1 bg-black-500">
+    <!--clicker area -->
+    <p id="scoreDisplay">score</p>
+    <button id="clicker" class="">
+   <img src="/src/assets/cat2-1024x676.jpg" >
+    </button>
+    </dive>
+    <div class=" flex-1 bg-blue-500 ">
+      <!--upgrade-->
+    </div>
+    <div class="flex-1 bg-ligh green-500">
+     store 
+    </div>
+   </main>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

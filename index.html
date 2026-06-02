@@ -7,26 +7,70 @@
     <title>animalclicker</title>
     <link href="/src/style.css" rel="stylesheet">
   </head>
-  <body class="flex flex-col h-screen">
-    <header class="bg-green-500  text-white italic text-5xl text-center ">
-      <h1>Animal Clicker</h1>
-    </header>
 
-   <main class="flex flex-1 ">
-    <dive class=" flex-1 bg-black-500">
-    <!--clicker area -->
-    <p id="scoreDisplay">score</p>
-    <button id="clicker" class="">
-   <img src="/src/assets/cat2-1024x676.jpg" >
-    </button>
-    </dive>
-    <div class=" flex-1 bg-blue-500 ">
-      <!--upgrade-->
-    </div>
-    <div class="flex-1 bg-ligh green-500">
-     store 
-    </div>
-   </main>
+  <body class = " flex flex-col h-screen"> 
+    <header class="bg-gray-400 text-white italic text-5xl text-center">
+     <h1><center> Puppy Clicker</center></h1>
+    </header>
+ 
+    <main class="flex flex-1 gap-4 "> 
+      <div class="flex-1 bg-pink-200 "> 
+      <!--clicker -->
+     <p class= "bg-pink-200 text-white " id="scoreDisplay">Score</p>
+     <button id="clicker"> 
+      <img src="src/assets/puppy.png" width="700" >
+     </button>
+      </div>
+    
+      <div class="flex-1 flex  bg-light to-pink-200 " .text-center {
+        text-align: center;
+    }
+     >
+        <header class="text-white italic text-7xl text-center"> 
+          <!--store-->
+          <h2>store</h2>
+        </header>
+       <!-- The store item button -->
+
+        <section class="flex flex-wrap justify-center gap-4">
+
+    
+
+       <button id="upgradeOne" class="   items-center-safe "> 
+        <img src="src/assets/download.png" >
+         
+        <div>
+          <p id="upgradeOneCount">0 paw </p>
+          <p> cost:100paw </p> 
+        </div>
+      </button>
+     
+      <button id="upgradeTwo" class="flex  bg-gray-400- items-center-safe"
+        > 
+        <img src="src/assets/screen-shot-2017-07-31-at-9-06-08-pm.png  " width="100">
+        <div>
+          <p id="upgradeTwoCount">0 boost </p>
+          <p> cost:10,000boost  </p> 
+        </div>
+      </button>
+     
+      <button id="upgradeThree" class="flex  justify-center items-center-safe"> 
+        <img src="src/assets/images-1.jpg" width="100">
+        <div>
+          <p id="upgradeThreeCount">0 food </p>
+          <p> cost:700food </p> 
+        </div>
+      </button>
+     
+     
+  
+
+      </div>
+    </main>
+   </body>
+
+
+   
     
     <script type="module" src="/src/main.js"></script>
   </body>

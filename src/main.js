@@ -2,7 +2,7 @@ import {Howl} from 'howler'
 
 import soundEffectOneSrc from './assets/game-over.mp3'
 
-import backgroundMusicSrc from './assets/minecraft.mp3'
+import backgroundMusicSrc from './assets/puppysound.mp3'
 
 import soundEffectTwoSrc from './assets/ding.mp3'
 
@@ -34,9 +34,25 @@ let clicker = document.getElementById("clicker")
 
 let scoreDisplay = document.getElementById("scoreDisplay")
 
+let popup = document.getElementById('popup')
+
 function updateScore(amount){
 score += amount
  scoreDisplay.innerText = score.toFixed(0) + 'paw'
+
+ if (score>=200) {
+   popup.innerText = 'You got this keep going!'
+   // alert ('You got this. Keep going !') 
+ } 
+
+if (score>=300000){
+   popup.innerText= 'You getting there. your going to make it '
+   // alert ('You getting there. Your going to make it.')
+}
+if(score>=500000000){
+   popup.innerText= 'congratulation '
+   // alert ('congratulation !.')
+}
 }
 
 clicker.addEventListener("click", function(){
@@ -64,33 +80,34 @@ if(score>=100){
 
 let upgradeTwo = document.getElementById("upgradeTwo")
 let upgradeTwoScore = document.getElementById("upgradeTwoCount")
-let boost = 0 
+let boost = 0
 
  upgradeTwo.addEventListener("click",function() {
 if(score>=100){
    updateScore(-100)
    boost++
-   upgradetwoCount.innerText = boost + "boost"
+   upgradeTwoScore.innerText = boost + "boost"
 } else{
  alert ('you broke')
 }
 })
     
-let upgradethree = document.getElementById("upgradeThree")
+let upgradeThree = document.getElementById("upgradeThree")
 let upgradeThreeScore = document.getElementById("upgradeThreeCount")
 let food  = 0 
 
- upgradeTwo.addEventListener("click",function() {
+ upgradeThree.addEventListener("click",function() {
 if(score>=100){
    updateScore(-100)
    food++
-   upgradethreeCount.innerText = food + "food"
+   upgradeThreeScore.innerText = food + "food"
 } else{
  alert ('you broke')
 }
 })
     
 
+ 
 
  
 
@@ -101,3 +118,7 @@ if(score>=100){
  }
 
  setInterval(gameLoop,1000)
+
+
+
+

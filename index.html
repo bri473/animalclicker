@@ -7,61 +7,71 @@
     <title>animalclicker</title>
     <link href="/src/style.css" rel="stylesheet">
   </head>
-
-  <body class = " flex flex-col h-screen"> 
-    <header class="bg-gray-400 text-white italic text-5xl text-center">
-     <h1><center> Puppy Clicker</center></h1>
+   <div id="popup" class="fixed inset-0 flex justify-center items-center text-2xl pointer-events-none"></div>
+  <body class = "bg-gray-300 flex flex-col h-screen" >
+    <header class="bg-gray-400 text-white italic text-5xl text-center border: 10px ;  padding: 30px; ">
+     <h1><center> Puppy Clicker</center> </h1>
     </header>
  
-    <main class="flex flex-1 gap-4 "> 
-      <div class="flex-1 bg-pink-200 "> 
+    <main class="flex flex-1 gap-4 border:15px ; padding: 50px; margin:20px; "> 
+      <div class=" bg-gray-300 flex-1 "> 
       <!--clicker -->
-     <p class= "bg-pink-200 text-white " id="scoreDisplay">Score</p>
+     <p class= " text-5xl text-white italic " id="scoreDisplay">score</p>
      <button id="clicker"> 
       <img src="src/assets/puppy.png" width="700" >
      </button>
       </div>
     
-      <div class="flex-1 flex  bg-light to-pink-200 " .text-center {
-        text-align: center;
-    }
+      <div class=" bg-gray-200 flex-1 flex flex-wrap justify-center gap-4 order: 15px ; padding: 50px; " 
+    
      >
-        <header class="text-white italic text-7xl text-center"> 
+     
+        <header class=" bg-gray-200 text-white italic text-7xl" 
+        > 
           <!--store-->
-          <h2>store</h2>
-        </header>
+          <h2>Store  </h2>
+          </header>
        <!-- The store item button -->
 
-        <section class="flex flex-wrap justify-center gap-4">
+       
 
     
 
-       <button id="upgradeOne" class="   items-center-safe "> 
-        <img src="src/assets/download.png" >
+       <button id="upgradeOne" class="  flex  items-center-safe "> 
+        <img src="src/assets/paw-print.png" width="100" >
          
+        <br>
         <div>
+        
           <p id="upgradeOneCount">0 paw </p>
           <p> cost:100paw </p> 
         </div>
-      </button>
+      </button> 
+
+   
      
-      <button id="upgradeTwo" class="flex  bg-gray-400- items-center-safe"
+      <button id="upgradeTwo" class="flex  items-center-safe  "
         > 
-        <img src="src/assets/screen-shot-2017-07-31-at-9-06-08-pm.png  " width="100">
+        <img src="src/assets/rocket.jpg" width="100">
         <div>
           <p id="upgradeTwoCount">0 boost </p>
           <p> cost:10,000boost  </p> 
         </div>
       </button>
-     
-      <button id="upgradeThree" class="flex  justify-center items-center-safe"> 
-        <img src="src/assets/images-1.jpg" width="100">
+    
+      <button id="upgradeThree" class="flex  items-center-safe"> 
+         <img src="  src/assets/food .jpg"  width="100">
         <div>
           <p id="upgradeThreeCount">0 food </p>
           <p> cost:700food </p> 
         </div>
       </button>
-     
+
+
+   
+
+      
+
      
   
 
